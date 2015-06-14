@@ -1,0 +1,102 @@
+#top
+{
+	width: 1800px;
+	margin-left: 200px;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+
+#left
+{
+	text-align: center;
+	width: 200px;
+	height: 525px;
+	margin-left: 230px;
+	margin-top: 20px;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+
+#center
+{
+	z-index: 0;
+	width: 1220px;
+	height: 700px;
+	margin-left: 470px;
+	margin-top: -525px;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+
+#right
+{
+	text-align:center;
+	width: 200px;
+	height: 525px;
+	margin-left: 1730px;
+	margin-top: -700px;
+	background-color: #909090;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+
+#chat
+{
+	z-index: 10;
+	position: absolute;
+	margin-left: 170px;
+	margin-top: 100px;
+	width: 670px;
+	height: 200px;
+	background-color: #8cfd8e;
+	border-radius: 10px;
+	box-shadow: 13px 13px 12px #000;
+}
+
+.top_header {
+	float: left;
+	margin-left: 15px;
+	margin-top: 20px;
+	width: 500px;
+}
+
+.loupe_header {
+]	margin-left: 850px;
+	margin-bottom: -30px;
+	width: 350px;
+
+}
+
+.restart {
+	float: right;
+	margin: 15px 15px 0 0;
+	width: 1.5%;
+}
+
+.left {
+	float: right;
+	margin: 130px -25px 0 0;
+	width: 1.5%;
+}
+
+.arrow {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 80px;
+}
+
+.hand {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	width: 80px;
+}
+
+.eyes {
+	border: solid red 7px;
+	border-radius: 7px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 80px;}
