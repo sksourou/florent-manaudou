@@ -30,6 +30,31 @@ ul {
 	10px 20px 20px rgba(0,0,0,.1);
 }
 
+
 .menu_item {
 	transition: all 0.7s;
+}
+
+.menu_sous_menu {
+	margin-left: -40px;
+}
+
+.sous_menu {
+	float: right;
+	margin-top: -14px;
+	margin-left: 15px;
+    display: none; /* Masque la sous-liste */
+	position: relative;
+}
+
+.sous_menu_item {
+	float: right;
+    position: absolute; /* Evite que la dimension du conteneur ne change quand la sous-liste est affichée */
+    white-space: nowrap; /* Pour que le texte ne revienne pas à la ligne */
+    margin-top: -2px; /* Pour que le sous-menu recouvre son parent, facilitant le passage de la souris de l’un à l’autre */
+}
+
+.menu_sous_menu:hover .sous_menu{
+	display:block;
+	position: absolute;
 }
