@@ -2,7 +2,7 @@
 <?php
 while(1)
 {
-	echo "Entrez un nombre:";
+	echo "Entrez un nombre: ";
 	if ($line = fgets(STDIN))
 	{
 		$line = trim($line);
@@ -18,7 +18,7 @@ while(1)
 		if ($valide == 1)
 			 echo "'".$line2."' n'est pas un chiffre\n";
 		else if ($line <= $neglim || $line >= $intlim)
-			echo "Error: le nombre et trop grand.\n";
+			echo "Error: le nombre est trop grand.\n";
 		else if ($line % 2 == 0)
 			echo "Le chiffre ".$line." est Pair\n";
 		else
