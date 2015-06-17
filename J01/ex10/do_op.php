@@ -13,7 +13,7 @@
 		$str1 = implode(" ", $argv);
 		$tab = ft_split_doop($str1);
 		if ($tab[2] == "-")
-			$result = $tab[1] - $tab[3];
+			$result = $tab[1] - $tab	[3];
 		else if ($tab[2] == "+")
 			$result = $tab[1] + $tab[3];
 		else if ($tab[2] == "*")

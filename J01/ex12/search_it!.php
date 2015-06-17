@@ -15,6 +15,7 @@
 
 			}
 		}
-		echo $result;
+		if ($result)
+			echo $result."\n";
 	}
 ?>
