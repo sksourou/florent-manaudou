@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon</title>
+	<style> #ball {
+		background-color:red;
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="ball" onclick='ballup()' onmouseout='balldown()'>
+		<script>
+			var colors = ["red", "green", "blue"];
+			var i = 0;
+			var ball = document.getElementById("ball");
+			console.log(ball);
+			var size = ball.clientHeight;
+			function ballup()
+			{
+				i++;
+				size += 10;
+				if (size > 420)
+					size = 200;
+				if (i == 3)
+					i = 0;
+				ball.setAttribute('style', 'width: '+size+'px; height: '+size+'px; border-radius: '+size+'px; background-color:'+colors[i]+';');
+			}
+			function balldown()
+			{
+				console.log(ball);
+				size -= 5;
+				i--;
+				if (i == -1)
+					i = 2;
+				if (size < 200)
+					size = 200;
+				ball.setAttribute('style', 'width: +size+px; height: +size+px; border-radius: +size+px; background-color:+colors[i]+;');
+			}
+		</script>
+	</div>
+</body>
+</html>
