@@ -3,16 +3,17 @@
 <head>
 	<title>Calc</title>
 	<META charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<script>
 	setInterval("alert('Please, use me...')", 30000);
-		function calc()
+		function calc(el)
 		{
-			var term1 = document.getElementById("term1").value;
-			var op = document.getElementById("operator").value;
-			var term2 = document.getElementById("term2").value;
-			if ((operator.value == '/' || operator.value == '%')
+			var term1 = $("#term1").val();
+			var op = $("#operator").val();
+			var term2 = $("#term2").val();
+			if ((op == '/' || op == '%')
 				&& (parseInt(term2) == 0 || parseInt(term1 == 0)))
 			{
 				console.log('It’s over 9000!');
@@ -37,22 +38,22 @@
 				console.log(parseInt(term1)+parseInt(term2));
 				alert(parseInt(term1)+parseInt(term2));
 			}
-			if (operator.value == '-')
+			else if (operator.value == '-')
 			{
 				console.log(parseInt(term1)-parseInt(term2));
 				alert(parseInt(term1)-parseInt(term2));
 			}
-			if (operator.value == '*')
+			else if (operator.value == '*')
 			{
 				console.log(parseInt(term1)*parseInt(term2));
 				alert(parseInt(term1)*parseInt(term2));
 			}
-			if (operator.value == '/')
+			else if (operator.value == '/')
 			{
 				console.log(parseInt(term1)/parseInt(term2));
 				alert(parseInt(term1)/parseInt(term2));
 			}
-			if (operator.value == '%')
+			else if (operator.value == '%')
 			{
 				console.log(parseInt(term1)%parseInt(term2));
 				alert(parseInt(term1)%parseInt(term2));
@@ -60,7 +61,7 @@
 
 		}
 	</script>
-	<form onsubmit="calc()">
+	<form onsubmit="calc(this)">
 		<input id="term1" type="text">
 		<select id="operator">
 			<option value="+">+</option>
